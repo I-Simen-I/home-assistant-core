@@ -1125,3 +1125,49 @@
         clickAction: /lovelace-stats/live-powerusage
         color: red
   mode: single
+- id: '1626631127143'
+  alias: systemair set air flow high if hot inside
+  description: ''
+  trigger:
+  - platform: time_pattern
+    minutes: /15
+  condition:
+  - condition: and
+    conditions:
+    - condition: template
+      value_template: "{{ \n  float(states('sensor.inside_avg_temperature')) > 24\
+        \ and\n  float(states('sensor.systemair_temperature_supply_air')) < 23 and\n\
+        \  states('sensor.systemair_selected_modus') == \"Manuell\" and\n  states('sensor.systemair_air_flow')\
+        \ != \"Høy\"\n}}"
+    - condition: time
+      after: '19:00'
+      before: 06:00
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.systemair_manual_air_flow
+    data:
+      option: Høy
+  mode: single
+- id: '1626631332571'
+  alias: systemair set air flow normal
+  description: ''
+  trigger:
+  - platform: time
+    at: 07:00
+  condition:
+  - condition: and
+    conditions:
+    - condition: state
+      entity_id: sensor.systemair_selected_modus
+      state: Manuell
+    - condition: state
+      entity_id: sensor.systemair_air_flow
+      state: Høy
+  action:
+  - service: input_select.select_option
+    target:
+      entity_id: input_select.systemair_manual_air_flow
+    data:
+      option: Normal
+  mode: single

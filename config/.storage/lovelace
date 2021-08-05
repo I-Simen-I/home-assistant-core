@@ -236,6 +236,79 @@
                                     "type": "conditional"
                                 },
                                 {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.systemair_selected_modus",
+                                            "state": "Manuell"
+                                        },
+                                        {
+                                            "entity": "sensor.systemair_air_flow",
+                                            "state_not": "Normal"
+                                        }
+                                    ],
+                                    "card": {
+                                        "entities": [
+                                            {
+                                                "entities": [
+                                                    {
+                                                        "entity": "sensor.systemair_air_flow"
+                                                    },
+                                                    {
+                                                        "entity": "sensor.systemair_temperature_supply_air"
+                                                    },
+                                                    {
+                                                        "entity": "sensor.systemair_fan_speed_intake"
+                                                    },
+                                                    {
+                                                        "entity": "sensor.systemair_fan_speed_exhaust"
+                                                    }
+                                                ],
+                                                "entity": "sensor.systemair_selected_modus",
+                                                "name": "Ventilasjon",
+                                                "show_state": false,
+                                                "type": "custom:multiple-entity-row",
+                                                "icon": "mdi:fan"
+                                            }
+                                        ],
+                                        "show_header_toggle": false,
+                                        "type": "entities"
+                                    }
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.systemair_selected_modus",
+                                            "state_not": "Manuell"
+                                        }
+                                    ],
+                                    "card": {
+                                        "entities": [
+                                            {
+                                                "entities": [
+                                                    {
+                                                        "entity": "sensor.systemair_selected_modus"
+                                                    },
+                                                    {
+                                                        "entity": "sensor.systemair_modus_countdown"
+                                                    },
+                                                    {
+                                                        "entity": "sensor.systemair_temperature_supply_air"
+                                                    }
+                                                ],
+                                                "entity": "sensor.systemair_selected_modus",
+                                                "name": "Ventilasjon",
+                                                "show_state": false,
+                                                "type": "custom:multiple-entity-row",
+                                                "icon": "mdi:fan"
+                                            }
+                                        ],
+                                        "show_header_toggle": false,
+                                        "type": "entities"
+                                    }
+                                },
+                                {
                                     "entities": [
                                         {
                                             "entity": "switch.house_scene_morgen",
