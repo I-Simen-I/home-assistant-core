@@ -3,3 +3,6 @@ sensor.bedroom_293_0_1_295:
 
 sensor.bedroom_293_0_2_296:
   friendly_name: Luftfuktighet
+
+sensor.bedroom_293_0_1_295_battery_level:
+  friendly_name: 'Sensor soverom'

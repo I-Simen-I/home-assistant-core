@@ -1,6 +1,0 @@
-bedroom_293_0_1_295_battery_level:
-  friendly_name: 'Sensor soverom'
-  icon_template: "mdi:battery-70"
-  unit_of_measurement: "%"
-  value_template: >-
-    {{ state_attr('sensor.bedroom_293_0_1_295', 'battery_level') }}

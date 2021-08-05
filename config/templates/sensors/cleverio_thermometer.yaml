@@ -1,0 +1,5 @@
+- name: 'bedroom_293_0_1_295_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('sensor.bedroom_293_0_1_295', 'battery_level') }}
