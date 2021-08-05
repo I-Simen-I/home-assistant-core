@@ -1,67 +1,61 @@
 # ETG 0
-fibaro_door_sensor_laundry_room:
-  friendly_name: 'Ytterdør'
-  icon_template: >-
+- name: 'fibaro_door_sensor_laundry_room'
+  icon: >-
     {% if is_state('binary_sensor.laundry_room_206_0_207', 'on') %}
       mdi:door-open
     {% else %}
       mdi:door
     {% endif %}
-  value_template: >-
+  state: >-
     {% if is_state('binary_sensor.laundry_room_206_0_207', 'on') %}
       Åpen
     {% else %}
       Lukket
     {% endif %}
 
-fibaro_door_sensor_battery_level_laundry_room:
-  friendly_name: 'Dørsensor vaskerom'
-  icon_template: "mdi:battery-70"
+- name: 'fibaro_door_sensor_battery_level_laundry_room:'
+  device_class: 'battery'
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ state_attr('binary_sensor.laundry_room_206_0_207', 'battery_level') }}
 
-fibaro_door_sensor_technical_room:
-  friendly_name: 'Dør'
-  icon_template: >-
+- name: 'fibaro_door_sensor_technical_room'
+  icon: >-
     {% if is_state('binary_sensor.technical_room_264_0_265', 'on') %}
       mdi:door-open
     {% else %}
       mdi:door
     {% endif %}
-  value_template: >-
+  state: >-
     {% if is_state('binary_sensor.technical_room_264_0_265', 'on') %}
       Åpen
     {% else %}
       Lukket
     {% endif %}
 
-fibaro_door_sensor_battery_level_technical_room:
-  friendly_name: 'Dørsensor teknisk rom'
-  icon_template: "mdi:battery-70"
+- name: 'fibaro_door_sensor_battery_level_technical_room'
+  device_class: 'battery'
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ state_attr('binary_sensor.technical_room_264_0_265', 'battery_level') }}
 
 # ETG 1
-fibaro_door_sensor_kitchen:
-  friendly_name: 'Skyvedør'
-  icon_template: >-
+- name: 'fibaro_door_sensor_kitchen'
+  icon: >-
     {% if is_state('binary_sensor.kitchen_258_0_259', 'on') %}
       mdi:arrow-right-bold-box-outline
     {% else %}
       mdi:checkbox-blank-outline
     {% endif %}
-  value_template: >-
+  state: >-
     {% if is_state('binary_sensor.kitchen_258_0_259', 'on') %}
       Åpen
     {% else %}
       Lukket
     {% endif %}
 
-fibaro_door_sensor_battery_level_kitchen:
-  friendly_name: 'Dørsensor kjøkken'
-  icon_template: "mdi:battery-70"
+- name: 'fibaro_door_sensor_battery_level_kitchen'
+  device_class: 'battery'
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ state_attr('binary_sensor.kitchen_258_0_259', 'battery_level') }}

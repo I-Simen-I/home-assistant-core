@@ -1,3 +1,4 @@
+# TEMP
 # ETG 0
 sensor.laundry_room_206_0_1_208:
   friendly_name: Temperatur
@@ -8,3 +9,24 @@ sensor.technical_room_264_0_1_266:
 # ETG 1
 sensor.kitchen_258_0_1_260:
   friendly_name: Temperatur
+
+# DOOR
+# ETG 0
+sensor.fibaro_door_sensor_laundry_room:
+  friendly_name: 'Ytterdør'
+
+sensor.fibaro_door_sensor_battery_level_laundry_room:
+  friendly_name: 'Dørsensor vaskerom'
+
+sensor.fibaro_door_sensor_technical_room:
+  friendly_name: 'Dør'
+
+sensor.fibaro_door_sensor_battery_level_technical_room:
+  friendly_name: 'Dørsensor teknisk rom'
+
+# ETG 1
+sensor.fibaro_door_sensor_kitchen:
+  friendly_name: 'Skyvedør'
+
+sensor.fibaro_door_sensor_battery_level_kitchen:
+  friendly_name: 'Dørsensor kjøkken'
