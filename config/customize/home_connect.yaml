@@ -11,6 +11,9 @@ sensor.siemens_oven_remaining_program_time:
 sensor.siemens_oven_program:
   friendly_name: Program
 
+binary_sensor.siemens_oven_door:
+  friendly_name: Dør
+
 # Dampovn
 sensor.siemens_steam_oven_status:
   friendly_name: Dampovn
@@ -23,6 +26,9 @@ sensor.siemens_steam_oven_remaining_program_time:
 
 sensor.siemens_steam_oven_program:
   friendly_name: Program
+
+binary_sensor.siemens_steam_oven_door:
+  friendly_name: Dør
 
 # Vaskemaskin
 sensor.bosch_washing_machine_status:
@@ -37,6 +43,9 @@ sensor.bosch_washing_machine_remaining_program_time:
 sensor.bosch_washing_machine_program:
   friendly_name: Program
 
+binary_sensor.bosch_washing_machine_door:
+  friendly_name: Dør
+
 # Tørketrommel
 sensor.bosch_tumble_dryer_status:
   friendly_name: Tørketrommel
@@ -49,3 +58,6 @@ sensor.bosch_tumble_dryer_remaining_program_time:
 
 sensor.bosch_tumble_dryer_program:
   friendly_name: Program
+
+binary_sensor.bosch_tumble_dryer_door:
+  friendly_name: Dør
