@@ -30,3 +30,18 @@ sensor.fibaro_door_sensor_kitchen:
 
 sensor.fibaro_door_sensor_battery_level_kitchen:
   friendly_name: 'Dørsensor kjøkken'
+
+#MOTION
+# ETG 0
+sensor.fibaro_motion_sensor_battery_level_etg0_hall:
+  friendly_name: 'Bevegelsessensor gang ETG 0'
+
+sensor.fibaro_motion_sensor_battery_level_etg0_stairway:
+  friendly_name: 'Bevegelsessensor trapperom ETG 0'
+
+# WALL PLUG
+sensor.switch_kitchen_325_0_326_power_w:
+  friendly_name: 'Oppvaskmaskin'
+
+sensor.switch_kitchen_325_0_326_state:
+  friendly_name: 'Oppvaskmaskin'

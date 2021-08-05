@@ -1,0 +1,12 @@
+# ETG 0
+- name: 'fibaro_motion_sensor_battery_level_etg0_hall'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.hall_194_0_195', 'battery_level') }}
+
+- name: 'fibaro_motion_sensor_battery_level_etg0_stairway'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.stairway_200_0_201', 'battery_level') }}
