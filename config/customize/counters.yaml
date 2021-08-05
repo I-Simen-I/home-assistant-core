@@ -1,0 +1,29 @@
+sensor.counter_lights_on:
+  friendly_name: 'Lys på'
+
+sensor.counter_doors_open:
+  friendly_name: 'Dører oppe'
+
+sensor.counter_doors_locked:
+  friendly_name: 'Dører låst'
+
+sensor.counter_windows_open:
+  friendly_name: 'Vinduer oppe'
+
+sensor.counter_windows_open_etg1_kitchen:
+  friendly_name: 'Vinduer oppe'
+
+sensor.counter_windows_open_etg1_living_room:
+  friendly_name: 'Vinduer oppe'
+
+sensor.counter_windows_open_etg2_walk_in_closet:
+  friendly_name: 'Vinduer oppe'
+
+sensor.counter_screens_closed:
+  friendly_name: 'Screens lukket'
+
+sensor.counter_power_sockets_on:
+  friendly_name: 'Stikkontakter på'
+
+sensor.counter_thermostats_on:
+  friendly_name: 'Varmematter på'

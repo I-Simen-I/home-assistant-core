@@ -1,0 +1,14 @@
+sensor.counter_power_usage_lights:
+  friendly_name: 'Strømforbruk lys'
+
+sensor.counter_power_usage_screens:
+  friendly_name: 'Strømforbruk screens'
+
+sensor.counter_power_usage_power_outlets:
+  friendly_name: 'Strømforbruk stikkontakter'
+
+sensor.counter_power_usage_power_thermostats:
+  friendly_name: 'Strømforbruk varmematter'
+
+sensor.counter_power_usage:
+  friendly_name: 'Strømforbruk (Smarthus)'

@@ -1,0 +1,21 @@
+# Multiple entity row
+- name: 'multiple_entity_row_climate'
+  icon: 'mdi:home-heart'
+  state: 1
+
+- name: 'multiple_entity_row_temperature'
+  icon: 'mdi:thermometer'
+  state: 1
+
+- name: 'multiple_entity_row_humidity'
+  icon: 'mdi:water-percent'
+  state: 1
+
+- name: 'multiple_entity_row_window'
+  icon: 'mdi:window-closed-variant'
+  state: 1
+
+- name: 'multiple_entity_row_windows'
+  icon: 'mdi:window-closed-variant'
+  state: 1
+

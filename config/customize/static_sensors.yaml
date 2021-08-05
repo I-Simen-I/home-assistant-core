@@ -1,0 +1,15 @@
+# Multiple entity row
+sensor.multiple_entity_row_climate:
+  friendly_name: 'Klima'
+
+sensor.multiple_entity_row_temperature:
+  friendly_name: 'Temperatur'
+
+sensor.multiple_entity_row_humidity:
+  friendly_name: 'Luftfuktighet'
+
+sensor.multiple_entity_row_window:
+  friendly_name: 'Vindu'
+
+sensor.multiple_entity_row_windows:
+  friendly_name: 'Vinduer'
