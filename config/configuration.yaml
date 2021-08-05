@@ -24,6 +24,8 @@ input_number: !include input_number.yaml
 scene: !include_dir_merge_list scenes/
 group: !include_dir_merge_named groups/
 sensor: !include_dir_merge_list sensors/
+template:
+  sensor: !include_dir_merge_list templates/sensors/
 binary_sensor: !include_dir_merge_list binary_sensors/
 counter: !include_dir_merge_named counters/
 switch: !include_dir_merge_list switches/

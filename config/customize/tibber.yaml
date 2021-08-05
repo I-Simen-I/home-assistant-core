@@ -1,0 +1,51 @@
+sensor.tibber_grid_company:
+  friendly_name: 'Netteier'
+
+sensor.tibber_eac:
+  friendly_name: 'Estimert årlig forbruk'
+
+sensor.tibber_price_min:
+  friendly_name: 'Min'
+
+sensor.tibber_price_avg:
+  friendly_name: 'Avg'
+
+sensor.tibber_price_max:
+  friendly_name: 'Max'
+
+#REALTIME
+sensor.tibber_real_time_w:
+  friendly_name: 'Strømforbruk'
+
+sensor.tibber_real_time_w_avg:
+  friendly_name: 'Gjennomsnitt'
+
+sensor.tibber_accumulated_consumption:
+  friendly_name: 'Forbruk i dag'
+
+sensor.tibber_accumulated_cost:
+  friendly_name: 'Kostnad i dag'
+
+sensor.tibber_real_time_l1:
+  friendly_name: 'Fase 1'
+
+sensor.tibber_real_time_l2:
+  friendly_name: 'Fase 2'
+
+sensor.tibber_real_time_l3:
+  friendly_name: 'Fase 3'
+
+sensor.tibber_real_time_voltage_phase:
+  friendly_name: 'Spenning'
+
+sensor.tibber_last_meter_consumption:
+  friendly_name: 'Målerstand'
+
+sensor.tibber_grid_rent:
+  friendly_name: 'Nettleie'
+
+sensor.tibber_total_cost:
+  friendly_name: 'Totalkostnad i dag'
+
+sensor.tibber_pulse_wifi_signal_strength:
+  friendly_name: 'Tibber Pulse signalstyrke'

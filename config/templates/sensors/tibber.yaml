@@ -1,92 +1,97 @@
-tibber_grid_company:
-  friendly_name: 'Netteier'
-  icon_template: 'mdi:transmission-tower'
-  value_template: >-
+- name: 'tibber_grid_company'
+  icon: 'mdi:transmission-tower'
+  state: >-
     {{ state_attr('sensor.electricity_price_soholsgata_71', 'grid_company') }}
 
-tibber_eac:
-  friendly_name: 'Estimert årlig forbruk'
-  icon_template: 'mdi:chart-line'
+- name: 'tibber_eac'
+  icon: 'mdi:chart-line'
+  device_class: 'energy'
   unit_of_measurement: "kWh"
-  value_template: >-
+  state: >-
     {{ state_attr('sensor.electricity_price_soholsgata_71', 'estimated_annual_consumption') }}
 
-tibber_price_min:
-  friendly_name: 'Min'
-  icon_template: 'mdi:currency-usd'
+- name: 'tibber_price_min'
+  icon: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
-  value_template: >-
+  state: >-
     {{ state_attr('sensor.electricity_price_soholsgata_71', 'min_price') }}
 
-tibber_price_avg:
-  friendly_name: 'Avg'
-  icon_template: 'mdi:currency-usd'
+- name: 'tibber_price_avg'
+  icon: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
-  value_template: >-
+  state: >-
     {{ state_attr('sensor.electricity_price_soholsgata_71', 'avg_price') }}
 
-tibber_price_max:
-  friendly_name: 'Max'
-  icon_template: 'mdi:currency-usd'
+- name: 'tibber_price_max'
+  icon: 'mdi:currency-usd'
   unit_of_measurement: "NOK/kWh"
-  value_template: >-
+  state: >-
     {{ state_attr('sensor.electricity_price_soholsgata_71', 'max_price') }}
 
+
+
 #REALTIME
-tibber_real_time_w:
-  friendly_name: 'Strømforbruk'
-  icon_template: 'mdi:flash'
+- name: 'tibber_real_time_w'
+  icon: 'mdi:flash'
+  device_class: 'power'
+  state_class: 'measurement'
   unit_of_measurement: "w"
-  value_template: >-
+  state: >-
     {{ states('sensor.power_soholsgata_71') }}
 
-tibber_real_time_w_avg:
-  friendly_name: 'Gjennomsnitt'
-  icon_template: 'mdi:flash'
+- name: 'tibber_real_time_w_avg'
+  icon: 'mdi:flash'
+  device_class: 'power'
+  state_class: 'measurement'
   unit_of_measurement: "w"
-  value_template: >-
+  state: >-
     {{ states('sensor.average_power_soholsgata_71') }}
 
-tibber_accumulated_consumption:
-  friendly_name: 'Forbruk i dag'
-  icon_template: 'mdi:chart-line'
+- name: 'tibber_accumulated_consumption'
+  icon: 'mdi:chart-line'
+  device_class: 'energy'
+  state_class: 'measurement'
   unit_of_measurement: "kWh"
-  value_template: >-
+  state: >-
     {{ states('sensor.accumulated_consumption_soholsgata_71') | float | round(2) }}
 
-tibber_accumulated_cost:
-  friendly_name: 'Kostnad i dag'
-  icon_template: 'mdi:cash-multiple'
+- name: 'tibber_accumulated_cost'
+  icon: 'mdi:cash-multiple'
+  state_class: 'measurement'
   unit_of_measurement: "NOK"
-  value_template: >-
+  state: >-
     {{ states('sensor.accumulated_cost_soholsgata_71') | float | round(2) }}
 
-tibber_real_time_l1:
-  friendly_name: 'Fase 1'
-  icon_template: 'mdi:flash-auto'
+- name: 'tibber_real_time_l1'
+  icon: 'mdi:flash-auto'
+  device_class: 'current'
+  state_class: 'measurement'
   unit_of_measurement: "A"
-  value_template: >-
+  state: >-
     {{ states('sensor.current_l1_soholsgata_71') | float | round(2) }}
 
-tibber_real_time_l2:
-  friendly_name: 'Fase 2'
-  icon_template: 'mdi:flash-auto'
+- name: 'tibber_real_time_l2'
+  icon: 'mdi:flash-auto'
+  device_class: 'current'
+  state_class: 'measurement'
   unit_of_measurement: "A"
-  value_template: >-
+  state: >-
     {{ states('sensor.current_l2_soholsgata_71') | float | round(2) }}
 
-tibber_real_time_l3:
-  friendly_name: 'Fase 3'
-  icon_template: 'mdi:flash-auto'
+- name: 'tibber_real_time_l3'
+  icon: 'mdi:flash-auto'
+  device_class: 'current'
+  state_class: 'measurement'
   unit_of_measurement: "A"
-  value_template: >-
+  state: >-
     {{ states('sensor.current_l3_soholsgata_71') | float | round(2) }}
 
-tibber_real_time_voltage_phase:
-  friendly_name: 'Spenning'
-  icon_template: 'mdi:waveform'
+- name: 'tibber_real_time_voltage_phase'
+  icon: 'mdi:waveform'
+  device_class: 'voltage'
+  state_class: 'measurement'
   unit_of_measurement: "V"
-  value_template: >
+  state: >-
     {% set power = [
           states("sensor.voltage_phase1_soholsgata_71") | float,
           states("sensor.voltage_phase2_soholsgata_71") | float,
@@ -94,18 +99,17 @@ tibber_real_time_voltage_phase:
     ] %}
     {{ power | list | sum / 3 | round(1) }}
 
-tibber_last_meter_consumption:
-  friendly_name: 'Målerstand'
-  icon_template: 'mdi:counter'
+- name: 'tibber_last_meter_consumption'
+  icon: 'mdi:counter'
+  device_class: 'energy'
   unit_of_measurement: "kWh"
-  value_template: >-
+  state: >-
     {{ states('sensor.last_meter_consumption_soholsgata_71') | float | round(2) }}
 
-tibber_grid_rent:
-  friendly_name: 'Nettleie'
-  icon_template: 'mdi:cash-multiple'
+- name: 'tibber_grid_rent'
+  icon: 'mdi:cash-multiple'
   unit_of_measurement: "NOK"
-  value_template: >-
+  state: >-
     {{
       (float(states('sensor.tibber_accumulated_consumption')) *
       (
@@ -114,19 +118,17 @@ tibber_grid_rent:
         + float(states('input_number.rik_energy_transfer_cost'))
       )
       + float(states('input_number.rik_daily_cost'))) | round(2)
-
     }}
 
-tibber_total_cost:
-  friendly_name: 'Totalkostnad i dag'
-  icon_template: 'mdi:cash-multiple'
+- name: 'tibber_total_cost'
+  icon: 'mdi:cash-multiple'
   unit_of_measurement: "NOK"
-  value_template: >-
+  state: >-
     {{ (float(states('sensor.tibber_accumulated_cost')) + float(states('sensor.tibber_grid_rent'))) | round(2) }}
 
-tibber_pulse_wifi_signal_strength:
-  friendly_name: 'Tibber Pulse signalstyrke'
-  icon_template: 'mdi:wifi'
+- name: 'tibber_pulse_wifi_signal_strength'
+  icon: 'mdi:wifi'
+  device_class: 'signal_strength'
   unit_of_measurement: "dB"
-  value_template: >-
+  state: >-
     {{ states('sensor.signal_strength_soholsgata_71') }}
