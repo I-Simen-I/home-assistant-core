@@ -1,8 +1,7 @@
 # Stekeovn
-siemens_oven_status:
-  friendly_name: Stekeovn
-  icon_template: mdi:window-maximize
-  value_template: >-
+- name: 'siemens_oven_status'
+  icon: mdi:window-maximize
+  state: >-
     {% if is_state("sensor.stekeovn_operation_state", "Ready") %}
       På
     {% elif is_state("sensor.stekeovn_operation_state", "Run") %}
@@ -25,24 +24,21 @@ siemens_oven_status:
       Offline
     {% endif %}
 
-siemens_oven_program_progress:
-  friendly_name: Status
-  icon_template: mdi:progress-clock
+- name: 'siemens_oven_program_progress'
+  icon: mdi:progress-clock
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ states('sensor.stekeovn_program_progress') }}
 
-siemens_oven_remaining_program_time:
-  friendly_name: Gjenstående
-  icon_template: mdi:clock
+- name: 'siemens_oven_remaining_program_time'
+  icon: mdi:clock
   device_class: timestamp
-  value_template: >-
+  state: >-
     {{ states('sensor.stekeovn_remaining_program_time') }}
 
-siemens_oven_program:
-  friendly_name: Program
-  icon_template: mdi:book-open-outline
-  value_template: >-
+- name: 'siemens_oven_program'
+  icon: mdi:book-open-outline
+  state: >-
     {% if is_state("switch.stekeovn_program_600watt", "on") %}
       600watt
     {% elif is_state("switch.stekeovn_program_hotair", "on") %}
@@ -58,10 +54,9 @@ siemens_oven_program:
     {% endif %}
 
 # Dampovn
-siemens_steam_oven_status:
-  friendly_name: Dampovn
-  icon_template: mdi:dishwasher
-  value_template: >-
+- name: 'siemens_steam_oven_status'
+  icon: mdi:dishwasher
+  state: >-
     {% if is_state("sensor.dampovn_operation_state", "Ready") %}
       På
     {% elif is_state("sensor.dampovn_operation_state", "Run") %}
@@ -84,24 +79,21 @@ siemens_steam_oven_status:
       Offline
     {% endif %}
 
-siemens_steam_oven_program_progress:
-  friendly_name: Status
-  icon_template: mdi:progress-clock
+- name: 'siemens_steam_oven_program_progress'
+  icon: mdi:progress-clock
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ states('sensor.dampovn_program_progress') }}
 
-siemens_steam_oven_remaining_program_time:
-  friendly_name: Gjenstående
-  icon_template: mdi:clock
+- name: 'siemens_steam_oven_remaining_program_time'
+  icon: mdi:clock
   device_class: timestamp
-  value_template: >-
+  state: >-
     {{ states('sensor.dampovn_remaining_program_time') }}
 
-siemens_steam_oven_program:
-  friendly_name: Program
-  icon_template: mdi:book-open-outline
-  value_template: >-
+- name: 'siemens_steam_oven_program'
+  icon: mdi:book-open-outline
+  state: >-
     {% if is_state("switch.dampovn_program_hotair", "on") %}
       4D-varmluft
     {% elif is_state("switch.dampovn_program_pizzasetting", "on") %}
@@ -115,10 +107,9 @@ siemens_steam_oven_program:
     {% endif %}
 
 # Vaskemaskin
-bosch_washing_machine_status:
-  friendly_name: Vaskemaskin
-  icon_template: mdi:washing-machine
-  value_template: >-
+- name: 'bosch_washing_machine_status'
+  icon: mdi:washing-machine
+  state: >-
     {% if is_state("sensor.vaskemaskin_operation_state", "Ready") %}
       På
     {% elif is_state("sensor.vaskemaskin_operation_state", "Run") %}
@@ -141,24 +132,21 @@ bosch_washing_machine_status:
       Offline
     {% endif %}
 
-bosch_washing_machine_program_progress:
-  friendly_name: Status
-  icon_template: mdi:progress-clock
+- name: 'bosch_washing_machine_program_progress'
+  icon: mdi:progress-clock
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ states('sensor.vaskemaskin_program_progress') }}
 
-bosch_washing_machine_remaining_program_time:
-  friendly_name: Gjenstående
-  icon_template: mdi:clock
+- name: 'bosch_washing_machine_remaining_program_time'
+  icon: mdi:clock
   device_class: timestamp
-  value_template: >-
+  state: >-
     {{ states('sensor.vaskemaskin_remaining_program_time') }}
 
-bosch_washing_machine_program:
-  friendly_name: Program
-  icon_template: mdi:book-open-outline
-  value_template: >-
+- name: 'bosch_washing_machine_program'
+  icon: mdi:book-open-outline
+  state: >-
     {% if is_state("switch.vaskemaskin_program_auto30", "on") %}
       Auto 30
     {% elif is_state("switch.vaskemaskin_program_auto40", "on") %}
@@ -206,10 +194,9 @@ bosch_washing_machine_program:
     {% endif %}
 
 # Tørketrommel
-bosch_tumble_dryer_status:
-  friendly_name: Tørketrommel
-  icon_template: mdi:tumble-dryer
-  value_template: >-
+- name: 'bosch_tumble_dryer_status'
+  icon: mdi:tumble-dryer
+  state: >-
     {% if is_state("sensor.torketrommel_operation_state", "Ready") %}
       På
     {% elif is_state("sensor.torketrommel_operation_state", "Run") %}
@@ -232,24 +219,21 @@ bosch_tumble_dryer_status:
       Offline
     {% endif %}
 
-bosch_tumble_dryer_program_progress:
-  friendly_name: Status
-  icon_template: mdi:progress-clock
+- name: 'bosch_tumble_dryer_program_progress'
+  icon: mdi:progress-clock
   unit_of_measurement: "%"
-  value_template: >-
+  state: >-
     {{ states('sensor.torketrommel_program_progress') }}
 
-bosch_tumble_dryer_remaining_program_time:
-  friendly_name: Gjenstående
-  icon_template: mdi:clock
+- name: 'bosch_tumble_dryer_remaining_program_time'
+  icon: mdi:clock
   device_class: timestamp
-  value_template: >-
+  state: >-
     {{ states('sensor.torketrommel_remaining_program_time') }}
 
-bosch_tumble_dryer_program:
-  friendly_name: Program
-  icon_template: mdi:book-open-outline
-  value_template: >-
+- name: 'bosch_tumble_dryer_program'
+  icon: mdi:book-open-outline
+  state: >-
     {% if is_state("switch.torketrommel_program_antishrink", "on") %}
       Antikrymp
     {% elif is_state("switch.torketrommel_program_blankets", "on") %}

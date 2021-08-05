@@ -1,0 +1,51 @@
+# Stekeovn
+sensor.siemens_oven_status:
+  friendly_name: Stekeovn
+
+sensor.siemens_oven_program_progress:
+  friendly_name: Status
+
+sensor.siemens_oven_remaining_program_time:
+  friendly_name: Gjenstående
+
+sensor.siemens_oven_program:
+  friendly_name: Program
+
+# Dampovn
+sensor.siemens_steam_oven_status:
+  friendly_name: Dampovn
+
+sensor.siemens_steam_oven_program_progress:
+  friendly_name: Status
+
+sensor.siemens_steam_oven_remaining_program_time:
+  friendly_name: Gjenstående
+
+sensor.siemens_steam_oven_program:
+  friendly_name: Program
+
+# Vaskemaskin
+sensor.bosch_washing_machine_status:
+  friendly_name: Vaskemaskin
+
+sensor.bosch_washing_machine_program_progress:
+  friendly_name: Status
+
+sensor.bosch_washing_machine_remaining_program_time:
+  friendly_name: Gjenstående
+
+sensor.bosch_washing_machine_program:
+  friendly_name: Program
+
+# Tørketrommel
+sensor.bosch_tumble_dryer_status:
+  friendly_name: Tørketrommel
+
+sensor.bosch_tumble_dryer_program_progress:
+  friendly_name: Status
+
+sensor.bosch_tumble_dryer_remaining_program_time:
+  friendly_name: Gjenstående
+
+sensor.bosch_tumble_dryer_program:
+  friendly_name: Program
