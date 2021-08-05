@@ -1,7 +1,6 @@
-# Værstatus
-sun_state:
-  friendly_name: 'Sola'
-  value_template: >-
+- name: 'sun_state'
+  icon: 'mdi:weather-sunny'
+  state: >-
     {% if is_state('sun.sun', 'above_horizon') %}
       Oppe
     {% else %}

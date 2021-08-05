@@ -1,0 +1,20 @@
+- name: 'network_ping_vg'
+  icon: mdi:pulse
+  state_class: 'measurement'
+  unit_of_measurement: "ms"
+  state: >-
+    {{ state_attr('binary_sensor.ping_vg', 'round_trip_time_avg') | float | round(0) }}
+
+- name: 'network_ping_google'
+  icon: mdi:pulse
+  state_class: 'measurement'
+  unit_of_measurement: "ms"
+  state: >-
+    {{ state_attr('binary_sensor.ping_google', 'round_trip_time_avg') | float | round(0) }}
+
+- name: 'network_ping_1111'
+  icon: mdi:pulse
+  state_class: 'measurement'
+  unit_of_measurement: "ms"
+  state: >-
+    {{ state_attr('binary_sensor.ping_1111', 'round_trip_time_avg') | float | round(0) }}

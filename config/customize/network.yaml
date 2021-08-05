@@ -1,0 +1,8 @@
+sensor.network_ping_vg:
+  friendly_name: vg.no
+
+sensor.network_ping_google:
+  friendly_name: google
+
+sensor.network_ping_1111:
+  friendly_name: 1.1.1.1
