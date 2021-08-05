@@ -1,0 +1,41 @@
+# State
+sensor.systemair_selected_modus:
+  friendly_name: 'Modus'
+
+sensor.systemair_filter_change:
+  friendly_name: 'Filterbytte'
+
+sensor.systemair_modus_countdown:
+  friendly_name: 'Gjenstående tid'
+
+sensor.systemair_air_flow:
+  friendly_name: 'Luftmengde'
+
+# Temperature
+sensor.systemair_temperature_intake:
+  friendly_name: 'Inn'
+
+sensor.systemair_temperature_exhaust:
+  friendly_name: 'Ut'
+
+sensor.systemair_temperature_return:
+  friendly_name: 'Gjenbruk'
+
+sensor.systemair_temperature_supply_air:
+  friendly_name: 'Tilluft'
+
+sensor.systemair_temperature_target:
+  friendly_name: 'Ønsket tilluft'
+
+sensor.systemair_temperature_over_heat:
+  friendly_name: 'Overheting'
+
+# Fan
+sensor.systemair_fan_speed_intake:
+  friendly_name: 'Inn'
+
+sensor.systemair_fan_speed_exhaust:
+  friendly_name: 'Ut'
+
+sensor.systemair_heat_recovery:
+  friendly_name: 'Varmegjenvinner'

@@ -1,8 +1,7 @@
 # State
-systemair_selected_modus:
-  friendly_name: 'Modus'
-  icon_template: 'mdi:clipboard-list-outline'
-  value_template: >-
+- name: 'systemair_selected_modus'
+  icon: 'mdi:clipboard-list-outline'
+  state: >-
     {% if states('sensor.vsr500_modus')|int == 0 %}
       Auto
     {% elif states('sensor.vsr500_modus')|int == 1  %}
@@ -33,19 +32,17 @@ systemair_selected_modus:
       N/A
     {% endif %}
 
-systemair_filter_change:
-  friendly_name: 'Filterbytte'
-  icon_template: 'mdi:air-filter'
-  unit_of_measurement: 'dager'
-  value_template: >-
+- name: 'systemair_filter_change'
+  icon: 'mdi:air-filter'
+  unit_of_measurement: "dager"
+  state: >-
     {% set time = states.sensor.vsr500_air_filter_countdown_s.state | int %}
     {% set days = (time / 86400) | int %}
     {{ days | int }}
 
-systemair_modus_countdown:
-  friendly_name: 'Gjenstående tid'
-  icon_template: 'mdi:timer'
-  value_template: >-
+- name: 'systemair_modus_countdown'
+  icon: 'mdi:timer'
+  state: >-
     {% if states('sensor.vsr500_modus') in('2', '3', '4', '6') %}
       {% set time = states.sensor.vsr500_modus_countdown_s.state | int %}
       {% set minutes = ((time % 3600) / 60) | int %}
@@ -68,10 +65,9 @@ systemair_modus_countdown:
       Inaktiv
     {% endif %}
 
-systemair_air_flow:
-  friendly_name: 'Luftmengde'
-  icon_template: 'mdi:weather-windy'
-  value_template: >-
+- name: 'systemair_air_flow'
+  icon: 'mdi:weather-windy'
+  state: >-
     {% if is_state("sensor.vsr500_modus_manual_air_flow", "0") %}
       Stopp
     {% elif is_state("sensor.vsr500_modus_manual_air_flow", "2") %}
@@ -85,67 +81,76 @@ systemair_air_flow:
     {% endif %}
 
 # Temperature
-systemair_temperature_intake:
-  friendly_name: 'Inn'
-  icon_template: 'mdi:home-import-outline'
+- name: 'systemair_temperature_intake'
+  icon: 'mdi:home-import-outline'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_intake') | float | round(2) }}
 
-systemair_temperature_exhaust:
-  friendly_name: 'Ut'
-  icon_template: 'mdi:home-export-outline'
+- name: 'systemair_temperature_exhaust'
+  icon: 'mdi:home-export-outline'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_exhaust') | float | round(2) }}
 
-systemair_temperature_return:
-  friendly_name: 'Gjenbruk'
-  icon_template: 'mdi:cached'
+- name: 'systemair_temperature_return'
+  icon: 'mdi:cached'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_return') | float | round(2) }}
 
-systemair_temperature_supply_air:
-  friendly_name: 'Tilluft'
-  icon_template: 'mdi:home-thermometer-outline'
+- name: 'systemair_temperature_supply_air'
+  icon: 'mdi:home-thermometer-outline'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_supply_air') | float | round(2) }}
 
-systemair_temperature_target:
-  friendly_name: 'Ønsket tilluft'
-  icon_template: 'mdi:thermometer'
+- name: 'systemair_temperature_target'
+  icon: 'mdi:thermometer'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_target') | float | round(2) }}
 
-systemair_temperature_over_heat:
-  friendly_name: 'Overheting'
-  icon_template: 'mdi:car-defrost-rear'
+- name: 'systemair_temperature_over_heat'
+  icon: 'mdi:car-defrost-rear'
+  device_class: 'temperature'
+  state_class: 'measurement'
   unit_of_measurement: '°C'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_temperature_over_heat') | float | round(2) }}
 
 # Fan
-systemair_fan_speed_intake:
-  friendly_name: 'Inn'
-  icon_template: 'mdi:fan'
+- name: 'systemair_fan_speed_intake'
+  icon: 'mdi:fan'
+  device_class: 'power_factor'
+  state_class: 'measurement'
   unit_of_measurement: '%'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_fan_speed_intake') }}
 
-systemair_fan_speed_exhaust:
-  friendly_name: 'Ut'
-  icon_template: 'mdi:fan'
+- name: 'systemair_fan_speed_exhaust'
+  icon: 'mdi:fan'
+  device_class: 'power_factor'
+  state_class: 'measurement'
   unit_of_measurement: '%'
-  value_template: >-
-    {{ states('sensor.vsr500_fan_speed_intake') }}
+  state: >-
+    {{ states('sensor.vsr500_fan_speed_exhaust') }}
 
 # Usage
-systemair_heat_recovery:
-  friendly_name: 'Varmegjenvinner'
-  icon_template: 'mdi:car-defrost-rear'
+- name: 'systemair_heat_recovery'
+  icon: 'mdi:car-defrost-rear'
+  device_class: 'power_factor'
+  state_class: 'measurement'
   unit_of_measurement: '%'
-  value_template: >-
+  state: >-
     {{ states('sensor.vsr500_heat_recovery') }}
