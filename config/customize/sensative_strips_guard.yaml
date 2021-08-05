@@ -1,0 +1,43 @@
+# ETG 1
+sensor.sensative_strips_guard_living_room_window_east_1:
+  friendly_name: 'Vindu øst venstre'
+
+sensor.sensative_strips_guard_living_room_window_east_1_battery_level:
+  friendly_name: 'Vindussensor stue øst venstre'
+
+sensor.sensative_strips_guard_living_room_window_east_2:
+  friendly_name: 'Vindu øst høyre'
+
+sensor.sensative_strips_guard_living_room_window_east_2_battery_level:
+  friendly_name: 'Vindussensor stue øst høyre'
+
+sensor.sensative_strips_guard_kitchen_window_1:
+  friendly_name: 'Vindu venstre'
+
+sensor.sensative_strips_guard_kitchen_window_1_battery_level:
+  friendly_name: 'Vindussensor kjøkken venstre'
+
+sensor.sensative_strips_guard_kitchen_window_2:
+  friendly_name: 'Vindu høyre'
+
+sensor.sensative_strips_guard_kitchen_window_2_battery_level:
+  friendly_name: 'Vindussensor kjøkken høyre'
+
+#ETG 2
+sensor.sensative_strips_guard_walk_in_closet_window_1:
+  friendly_name: 'Vindu øst'
+
+sensor.sensative_strips_guard_walk_in_closet_window_1_battery_level:
+  friendly_name: 'Vindussensor walk in closet øst'
+
+sensor.sensative_strips_guard_walk_in_closet_window_2:
+  friendly_name: 'Vindu sør'
+
+sensor.sensative_strips_guard_walk_in_closet_window_2_battery_level:
+  friendly_name: 'Vindussensor walk in closet sør'
+
+sensor.sensative_strips_guard_bedroom_window:
+  friendly_name: 'Vindu'
+
+sensor.sensative_strips_guard_bedroom_window_battery_level:
+  friendly_name: 'Vindussensor soverom'
