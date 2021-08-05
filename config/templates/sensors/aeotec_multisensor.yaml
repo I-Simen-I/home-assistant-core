@@ -1,0 +1,35 @@
+- name: 'stairway_228_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.stairway_228_0_229', 'battery_level') }}
+
+- name: 'living_room_234_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.living_room_234_0_235', 'battery_level') }}
+
+- name: 'living_room_240_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.living_room_240_0_241', 'battery_level') }}
+
+- name: 'east_252_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.east_252_0_253', 'battery_level') }}
+
+- name: 'south_246_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.south_246_0_247', 'battery_level') }}
+
+- name: 'north_355_battery_level'
+  device_class: 'battery'
+  unit_of_measurement: "%"
+  state: >-
+    {{ state_attr('binary_sensor.north_355_0_356', 'battery_level') }}

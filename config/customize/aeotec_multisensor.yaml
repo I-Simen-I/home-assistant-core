@@ -70,3 +70,22 @@ sensor.inside_avg_temperature:
 sensor.inside_avg_humidity:
   friendly_name: Gjennomsnittlig luftfuktighet
   icon: mdi:water-percent
+
+# BATTERY
+sensor.stairway_228_battery_level:
+  friendly_name: 'Klimasensor gang ETG 0'
+
+sensor.living_room_234_battery_level:
+  friendly_name: 'Klimasensor stue ETG 1'
+
+sensor.living_room_240_battery_level:
+  friendly_name: 'Klimasensor stue ETG 2'
+
+sensor.east_252_battery_level:
+  friendly_name: 'Klimasensor Ute-Øst'
+
+sensor.south_246_battery_level:
+  friendly_name: 'Klimasensor Ute-Sør'
+
+sensor.north_355_battery_level:
+  friendly_name: 'Klimasensor Ute-Nord'
