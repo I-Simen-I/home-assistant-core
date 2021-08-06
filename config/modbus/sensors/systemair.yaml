@@ -9,7 +9,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_temperature_exhaust
   scan_interval: 30
   device_class: temperature
@@ -20,7 +20,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_temperature_return
   scan_interval: 30
   device_class: temperature
@@ -31,7 +31,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_temperature_supply_air
   scan_interval: 30
   device_class: temperature
@@ -42,7 +42,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_temperature_over_heat
   scan_interval: 30
   device_class: temperature
@@ -53,7 +53,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_temperature_target
   scan_interval: 30
   device_class: temperature
@@ -64,7 +64,7 @@
   scale: 0.1
   offset: 0
   precision: 1
-  data_type: uint
+  data_type: uint16
 
 # Fan sensors
 - name: vsr500_fan_speed_intake
@@ -74,7 +74,7 @@
   address: 14000
   unit_of_measurement: '%'
   count: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_fan_speed_exhaust
   scan_interval: 30
   device_class: power_factor
@@ -82,7 +82,7 @@
   address: 14001
   unit_of_measurement: '%'
   count: 1
-  data_type: uint
+  data_type: uint16
 
 # Usage sensors
 - name: vsr500_heat_recovery
@@ -92,7 +92,7 @@
   address: 14102
   unit_of_measurement: '%'
   count: 1
-  data_type: uint
+  data_type: uint16
 
 # Status sensors
 - name: vsr500_air_filter_countdown_s
@@ -101,7 +101,7 @@
   address: 7005
   unit_of_measurement: 's'
   count: 2
-  data_type: uint
+  data_type: uint16
 
 # Modus sensors
 - name: vsr500_modus
@@ -109,17 +109,17 @@
   slave: 1
   address: 1160
   count: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_modus_countdown_s
   scan_interval: 30
   slave: 1
   address: 1110
   unit_of_measurement: s
   count: 1
-  data_type: uint
+  data_type: uint16
 - name: vsr500_modus_manual_air_flow
   scan_interval: 30
   slave: 1
   address: 1130
   count: 1
-  data_type: uint
+  data_type: uint16
