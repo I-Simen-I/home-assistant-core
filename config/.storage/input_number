@@ -9,7 +9,7 @@
                 "name": "\u00d8st",
                 "icon": "hass:brightness-5",
                 "mode": "slider",
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "step": 100.0,
                 "id": "cover_east_lux"
             },
@@ -17,7 +17,7 @@
                 "min": 1000.0,
                 "max": 5000.0,
                 "name": "S\u00f8r",
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "icon": "hass:brightness-5",
                 "step": 100.0,
                 "mode": "slider",
@@ -29,7 +29,7 @@
                 "name": "Kontor Simen",
                 "icon": "hass:brightness-5",
                 "step": 100.0,
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "mode": "slider",
                 "id": "cover_east_office_simen_lux"
             },
@@ -39,7 +39,7 @@
                 "name": "Vest",
                 "icon": "hass:brightness-5",
                 "step": 100.0,
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "mode": "slider",
                 "id": "cover_west_lux"
             },
@@ -48,7 +48,7 @@
                 "max": 500.0,
                 "name": "Aktiveres under",
                 "step": 50.0,
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "mode": "slider",
                 "id": "scene_house_kveld_lux",
                 "icon": "hass:brightness-5"
@@ -59,7 +59,7 @@
                 "name": "Aktiveres under",
                 "icon": "hass:brightness-5",
                 "step": 50.0,
-                "unit_of_measurement": "lux",
+                "unit_of_measurement": "lx",
                 "mode": "slider",
                 "id": "scene_house_dag_lux"
             }

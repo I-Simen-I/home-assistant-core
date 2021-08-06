@@ -89,7 +89,7 @@ class WeatherCard extends HTMLElement {
       <span>
         <ul class="variations right">
             <li><span class="ha-icon"><ha-icon icon="mdi:water-percent"></ha-icon></span>${humidity}<span class="unit"> %</span></li>
-            <li><span class="ha-icon"><ha-icon icon="mdi:weather-sunny"></ha-icon></span>${lux}<span class="unit"> lux</span></li>
+            <li><span class="ha-icon"><ha-icon icon="mdi:weather-sunny"></ha-icon></span>${lux}<span class="unit"> lx</span></li>
         </ul>
         <ul class="variations">
             <li><span class="ha-icon"><ha-icon icon="mdi:weather-windy"></ha-icon></span>${windBearing} ${windSpeed}<span class="unit"> ${getUnit('length')}/h</span></li>
