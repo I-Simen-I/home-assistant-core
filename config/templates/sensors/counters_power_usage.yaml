@@ -2,7 +2,7 @@
   device_class: 'power'
   state_class: 'measurement'
   icon: 'mdi:flash'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >
     {% set power = [
           state_attr("light.laundry_room_104_1_107", "current_power_w") | float,
@@ -40,7 +40,7 @@
   device_class: 'power'
   state_class: 'measurement'
   icon: 'mdi:flash'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >
     {% set power = [
           state_attr("cover.bedroom_273_1_276", "current_power_w") | float,
@@ -55,7 +55,7 @@
   device_class: 'power'
   state_class: 'measurement'
   icon: 'mdi:flash'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >
     {% set power = [
           state_attr("switch.bathroom_179_0_180", "current_power_w") | float,
@@ -73,7 +73,7 @@
   device_class: 'power'
   state_class: 'measurement'
   icon: 'mdi:flash'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >
     {% set power = [
           state_attr("switch.office_nora_144_4_152", "current_power_w") | float,
@@ -86,7 +86,7 @@
   device_class: 'power'
   state_class: 'measurement'
   icon: 'mdi:flash'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >
     {% set power = [
           states("sensor.counter_power_usage_lights") | float,

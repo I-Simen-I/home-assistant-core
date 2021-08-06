@@ -163,7 +163,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.bathroom_179_0_180",
@@ -176,7 +176,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.tv_room_181_0_182",
@@ -187,7 +187,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_simen_173_0_174",
@@ -199,7 +199,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_nora_192_0_193",
@@ -211,7 +211,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.bedroom_313_0_314",
@@ -222,7 +222,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.bathroom_187_1_190",
@@ -233,7 +233,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_simen_175_0_176",
@@ -244,7 +244,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.kitchen_325_0_326",
@@ -262,7 +262,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_simen_153_4_161",
@@ -275,7 +275,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_nora_144_4_152",
@@ -288,7 +288,7 @@
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.living_room_135_4_143",

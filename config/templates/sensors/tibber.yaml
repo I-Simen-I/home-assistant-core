@@ -35,7 +35,7 @@
   icon: 'mdi:flash'
   device_class: 'power'
   state_class: 'measurement'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >-
     {{ states('sensor.power_soholsgata_71') }}
 
@@ -43,7 +43,7 @@
   icon: 'mdi:flash'
   device_class: 'power'
   state_class: 'measurement'
-  unit_of_measurement: "w"
+  unit_of_measurement: "W"
   state: >-
     {{ states('sensor.average_power_soholsgata_71') }}
 
