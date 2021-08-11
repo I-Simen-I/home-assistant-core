@@ -81,6 +81,10 @@ light.office_nora_14_1_338:
   icon: mdi:ceiling-light
   friendly_name: Taklampe
 
+light.office_nora_361_0_362:
+  icon: mdi:buffet
+  friendly_name: Skjenk
+
 light.office_simen_4_1_7:
   icon: mdi:ceiling-light
   friendly_name: Taklampe

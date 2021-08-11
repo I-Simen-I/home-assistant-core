@@ -227,6 +227,8 @@
       state: off
     light.office_nora_14_1_338:
       state: off
+    light.office_nora_361_0_362:
+      state: off
     cover.office_simen_blind_north:
       state: open
       current_position: 100

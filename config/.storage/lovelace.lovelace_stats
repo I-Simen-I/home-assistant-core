@@ -454,8 +454,20 @@
                                     "name": "Kontor Simen"
                                 },
                                 {
-                                    "entity": "light.office_nora_14_1_338",
-                                    "name": "Kontor Nora"
+                                    "entities": [
+                                        {
+                                            "entity": "light.office_nora_14_1_338",
+                                            "toggle": true
+                                        },
+                                        {
+                                            "entity": "light.office_nora_361_0_362",
+                                            "toggle": true
+                                        }
+                                    ],
+                                    "entity": "light.living_room_69_1_72",
+                                    "name": "Kontor Nora",
+                                    "show_state": false,
+                                    "type": "custom:multiple-entity-row"
                                 },
                                 {
                                     "entities": [

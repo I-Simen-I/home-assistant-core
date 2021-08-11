@@ -30,7 +30,8 @@
           states.light.bathroom_29_1_32,
           states.light.bathroom_34_1_37,
           states.light.office_simen_4_1_7,
-          states.light.office_nora_14_1_338
+          states.light.office_nora_14_1_338,
+          states.light.office_nora_361_0_362
     ] %}
     {{ lights | selectattr('state','eq','on') | list | count }}
 

@@ -583,7 +583,7 @@
                                                 {
                                                     "attribute": "current_power_w",
                                                     "name": "Forbruk",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.bathroom_179_0_180",
@@ -1093,7 +1093,7 @@
                                                 {
                                                     "attribute": "current_power_w",
                                                     "name": "Forbruk",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_simen_173_0_174",
@@ -1143,11 +1143,14 @@
                                             "entity": "light.office_nora_14_1_338"
                                         },
                                         {
+                                            "entity": "light.office_nora_361_0_362"
+                                        },
+                                        {
                                             "entities": [
                                                 {
                                                     "attribute": "current_power_w",
                                                     "name": "Forbruk",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.office_nora_192_0_193",
@@ -1288,7 +1291,7 @@
                                                 {
                                                     "attribute": "current_power_w",
                                                     "name": "Forbruk",
-                                                    "unit": "w"
+                                                    "unit": "W"
                                                 }
                                             ],
                                             "entity": "switch.bedroom_313_0_314",
